@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Hospital_Empleados.Models
 {
-    public class Vacantes
+    public class Vacante
     {
         public int IdVacante { get; set; }
         public string Departamento { get; set; }
@@ -16,9 +16,9 @@ namespace Hospital_Empleados.Models
         public string ModificadoPor { get; set; }
         public DateTime? FechaModificacion { get; set; } = DateTime.Now;
 
-        public Vacantes() { }
+        public Vacante() { }
 
-        public Vacantes(int idVacante, string departamento, string descripcion, string estado, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
+        public Vacante(int idVacante, string departamento, string descripcion, string estado, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
         {
             IdVacante = idVacante;
             Departamento = departamento;

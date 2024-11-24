@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Hospital_Empleados.Models
 {
-    public class Nomina
+    public class Nomin
     {
         public int IdNomina { get; set; }
         public int IdEmpleado { get; set; }
@@ -18,9 +18,9 @@ namespace Hospital_Empleados.Models
         public DateTime FechaAdicion { get; set; } = DateTime.Now;
         public string ModificadoPor { get; set; }
         public DateTime? FechaModificacion { get; set; } = DateTime.Now;
-        public Nomina() { }
+        public Nomin() { }
 
-        public Nomina(int idNomina, int idEmpleado, string mes, decimal salarioBase, decimal horasExtras, decimal deducciones, decimal salarioNeto, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
+        public Nomin(int idNomina, int idEmpleado, string mes, decimal salarioBase, decimal horasExtras, decimal deducciones, decimal salarioNeto, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
         {
             IdNomina = idNomina;
             IdEmpleado = idEmpleado;

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Vacaciones.aspx.cs" Inherits="Hospital_Empleados.Pages.Vacaciones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VacantesForm.aspx.cs" Inherits="Hospital_Empleados.Pages.Vacantes" %>
 
 <!DOCTYPE html>
 
