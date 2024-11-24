@@ -7,7 +7,7 @@ namespace Hospital_Empleados.Models
 {
     public class Incidente
     {
-        public int IdIncidente {  get; set; }
+        public int IdIncidente { get; set; }
         public int IdEmpleado { get; set; }
         public DateTime Fecha { get; set; }
         public string Tipo { get; set; }
@@ -17,5 +17,19 @@ namespace Hospital_Empleados.Models
         public string ModificadoPor { get; set; }
         public DateTime? FechaModificacion { get; set; } = DateTime.Now;
 
+        public Incidente() { }
+
+        public Incidente(int idIncidente, int idEmpleado, DateTime fecha, string tipo, string descripcion, string adicionadoPor, DateTime fechaAdicion, string modificadoPor, DateTime? fechaModificacion)
+        {
+            IdIncidente = idIncidente;
+            IdEmpleado = idEmpleado;
+            Fecha = fecha;
+            Tipo = tipo;
+            Descripcion = descripcion;
+            AdicionadoPor = adicionadoPor;
+            FechaAdicion = fechaAdicion;
+            ModificadoPor = modificadoPor;
+            FechaModificacion = fechaModificacion;
+        }
     }
 }

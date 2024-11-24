@@ -121,6 +121,21 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\AsistenciaForm.aspx" />
+    <Content Include="Pages\BeneficioForm.aspx" />
+    <Content Include="Pages\Capacitacion.aspx" />
+    <Content Include="Pages\Cumplimiento_LegalForm.aspx" />
+    <Content Include="Pages\DisciplinaForm.aspx" />
+    <Content Include="Pages\EmpleadoForm.aspx" />
+    <Content Include="Pages\EvaluacionesForm.aspx" />
+    <Content Include="Pages\IncidenteForm.aspx" />
+    <Content Include="Pages\NominaForm.aspx" />
+    <Content Include="Pages\Permisos_LegalesForm.aspx" />
+    <Content Include="Pages\Recibos_PagosForm.aspx" />
+    <Content Include="Pages\ReporteForm.aspx" />
+    <Content Include="Pages\SolicitanteForm.aspx" />
+    <Content Include="Pages\Vacaciones.aspx" />
+    <Content Include="Pages\Vacantes.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -183,6 +198,8 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\DatabaseHelper.cs" />
+    <Content Include="App_Code\UsuarioDAO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -224,6 +241,111 @@
     <Compile Include="Models\Solicitante.cs" />
     <Compile Include="Models\Vacaciones.cs" />
     <Compile Include="Models\Vacantes.cs" />
+    <Compile Include="Pages\AsistenciaForm.aspx.cs">
+      <DependentUpon>AsistenciaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AsistenciaForm.aspx.designer.cs">
+      <DependentUpon>AsistenciaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BeneficioForm.aspx.cs">
+      <DependentUpon>BeneficioForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BeneficioForm.aspx.designer.cs">
+      <DependentUpon>BeneficioForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Capacitacion.aspx.cs">
+      <DependentUpon>Capacitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Capacitacion.aspx.designer.cs">
+      <DependentUpon>Capacitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cumplimiento_LegalForm.aspx.cs">
+      <DependentUpon>Cumplimiento_LegalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cumplimiento_LegalForm.aspx.designer.cs">
+      <DependentUpon>Cumplimiento_LegalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DisciplinaForm.aspx.cs">
+      <DependentUpon>DisciplinaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DisciplinaForm.aspx.designer.cs">
+      <DependentUpon>DisciplinaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EmpleadoForm.aspx.cs">
+      <DependentUpon>EmpleadoForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EmpleadoForm.aspx.designer.cs">
+      <DependentUpon>EmpleadoForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EvaluacionesForm.aspx.cs">
+      <DependentUpon>EvaluacionesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EvaluacionesForm.aspx.designer.cs">
+      <DependentUpon>EvaluacionesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IncidenteForm.aspx.cs">
+      <DependentUpon>IncidenteForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\IncidenteForm.aspx.designer.cs">
+      <DependentUpon>IncidenteForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NominaForm.aspx.cs">
+      <DependentUpon>NominaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NominaForm.aspx.designer.cs">
+      <DependentUpon>NominaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Permisos_LegalesForm.aspx.cs">
+      <DependentUpon>Permisos_LegalesForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Permisos_LegalesForm.aspx.designer.cs">
+      <DependentUpon>Permisos_LegalesForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Recibos_PagosForm.aspx.cs">
+      <DependentUpon>Recibos_PagosForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Recibos_PagosForm.aspx.designer.cs">
+      <DependentUpon>Recibos_PagosForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReporteForm.aspx.cs">
+      <DependentUpon>ReporteForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ReporteForm.aspx.designer.cs">
+      <DependentUpon>ReporteForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SolicitanteForm.aspx.cs">
+      <DependentUpon>SolicitanteForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SolicitanteForm.aspx.designer.cs">
+      <DependentUpon>SolicitanteForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vacaciones.aspx.cs">
+      <DependentUpon>Vacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vacaciones.aspx.designer.cs">
+      <DependentUpon>Vacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vacantes.aspx.cs">
+      <DependentUpon>Vacantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vacantes.aspx.designer.cs">
+      <DependentUpon>Vacantes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -250,7 +372,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="DAL\" />
-    <Folder Include="Pages\" />
     <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
