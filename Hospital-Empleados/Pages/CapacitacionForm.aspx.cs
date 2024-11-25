@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Hospital_Empleados.Pages
 {
-    public partial class Cumplimiento_LegalForm : System.Web.UI.Page
+    public partial class CapacitacionForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,16 +11,7 @@ namespace Hospital_Empleados.Pages
 {
 
 
-    public partial class Permisos_LegalesForm
+    public partial class CapacitacionForm
     {
-
-        /// <summary>
-        /// Control PermisosForm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm PermisosForm;
     }
 }

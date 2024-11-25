@@ -1,0 +1,39 @@
+﻿
+input[type="text"], input[type="datetime"], input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+input[value="Cancelar"] {
+    background-color: red
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#nombre {
+    font-weight: bold;
+}
+
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: double;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+div {
+    border-style: solid;
+    width: 500px;
+    margin-right: auto;
+    text-align: center;
+}

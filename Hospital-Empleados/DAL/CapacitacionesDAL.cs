@@ -19,7 +19,7 @@ namespace Hospital_Empleados.DAL
         {
             connectionString = ConfigurationManager.ConnectionStrings["HOSPITAL"].ConnectionString;
         }
-        public void CrearCapacitacion(Models.Capa capacitacion)
+        public void CrearCapacitacion(Capa capacitacion)
         {
             try
             {
@@ -31,8 +31,8 @@ namespace Hospital_Empleados.DAL
                     };
                     cmd.Parameters.AddWithValue("@IdEmpleado", capacitacion.IdEmpleado);
                     cmd.Parameters.AddWithValue("@Curso", capacitacion.Curso);
-                    cmd.Parameters.AddWithValue("@HoraInicio", capacitacion.FechaInicio);
-                    cmd.Parameters.AddWithValue("@HoraFin", capacitacion.FechaFin);
+                    cmd.Parameters.AddWithValue("@FechaInicio", capacitacion.FechaInicio);
+                    cmd.Parameters.AddWithValue("@FechaFin", capacitacion.FechaFin);
                     cmd.Parameters.AddWithValue("@Certificacion", capacitacion.Certificacion);
                     cmd.Parameters.AddWithValue("@AdicionadoPor", capacitacion.AdicionadoPor);
                     cmd.Parameters.AddWithValue("@FechaAdicion", capacitacion.FechaAdicion);
